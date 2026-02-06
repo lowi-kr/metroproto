@@ -87,6 +87,10 @@ message KickUserPayload {
   string reason = 2;
 }
 
+message TransferHostPayload {
+  string new_host_id = 1;
+}
+
 message SuggestTrackPayload {
   TrackInfo track_info = 1;
 }
