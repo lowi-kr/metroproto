@@ -87,10 +87,6 @@ message KickUserPayload {
   string reason = 2;
 }
 
-message ChatPayload {
-  string message = 1;
-}
-
 message SuggestTrackPayload {
   TrackInfo track_info = 1;
 }
@@ -154,13 +150,6 @@ message BufferCompletePayload {
 message ErrorPayload {
   string code = 1;
   string message = 2;
-}
-
-message ChatMessagePayload {
-  string user_id = 1;
-  string username = 2;
-  string message = 3;
-  int64 timestamp = 4;
 }
 
 message HostChangedPayload {
